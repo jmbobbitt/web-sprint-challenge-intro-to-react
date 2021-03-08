@@ -1,28 +1,31 @@
 // Write your Character component here
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const StyledCharacter = styled.div`
-  text-align: center;
-  align-items:center;
-  margin-top:1%;
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  border: 1px solid black;
+// const StyledCharacter = styled.div`
+//   text-align: center;
+//   align-items:center;
+//   margin-top:1%;
+//   display:flex;
+//   flex-wrap: wrap;
+//   justify-content: space-evenly;
+//   border: 1px solid black;
   
-`
+// `
 
-export default function Character({info}) {
+function Character(props){ 
+    console.log(props);
 
   return ( 
-      <StyledCharacter>      
-          <p>Name: {info.name}</p> 
-          <p>Weight: {info.mass}</p>
-          <p>Gender: {info.gender}</p>
-          <p>Date of Birth: {info.birth_year}</p>
-          <p>Homeworld: {info.homeworld}</p>
-          <p>Films: {info.films}</p>
-      </StyledCharacter>
+      <div className='Character'>      
+          <p>Name: {props.data.name}</p> 
+          <p>Weight: {props.data.mass}</p>
+          <p>Gender: {props.data.gender}</p>
+          <p>Date of Birth: {props.data.birth_year}</p>
+          <p>Homeworld: {props.data.homeworld}</p>
+          <p>Films: {props.data.films}</p>
+      </div>
   )
 } 
+
+export default Character
