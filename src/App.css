@@ -6,3 +6,12 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+
+.Character {
+  color: white;
+  border: 1rem dashed rgb(30, 107, 126);
+  background-color: rgb(77, 86, 88);
+  font-weight: bold;
+  font-size: large;
+  margin: 2rem;
+}
